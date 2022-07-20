@@ -45,6 +45,7 @@ export default {
     display: flex;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 .container {

@@ -14,12 +14,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Playfair Display Bold Italic';
+    src: url('@/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'Avenir Next', 'Playfair Display Bold Italic', sans-serif;
 }
 
 a {
