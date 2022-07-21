@@ -1,4 +1,5 @@
 <template>
+    <Navbar />
     <div class="header">
         <div class="header__content">
             <h1 class="title">Replace awkward lab visits with at-home <span class="italic_blue">STI testing</span> and <span class="italic_orange">treatment</span>.</h1>
@@ -16,8 +17,9 @@
     </div>
 </template>
 <script>
+import Navbar from '@/components/header/Navbar';
 export default {
-
+    components: { Navbar }
 }
 </script>
 <style scoped lang="scss">
@@ -26,6 +28,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, #DEDDE2 0%, #E3E6ED 44.29%, #DDE6EF 100%);
+    padding-top: 10%;
 }
 
 .header__content {

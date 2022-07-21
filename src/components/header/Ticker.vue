@@ -16,7 +16,7 @@ export default {
     white-space: nowrap;
     overflow: hidden;
     background: linear-gradient(90deg, #274CD6 0%, #CF63C6 49.91%, #80D7C4 100%);
-    padding: 10px 0px;
+    padding: .7vh 0px;
 
 }
 

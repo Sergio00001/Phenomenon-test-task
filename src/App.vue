@@ -1,21 +1,20 @@
 <template>
-    <Ticker />
-    <Navbar />
     <Header />
     <Insurance />
+    <OurMission />
+    <Steps />
 </template>
 
 <script>
-import Ticker from '@/components/Ticker'
-import Navbar from '@/components/Navbar'
-import Header from '@/components/Header'
+import Header from '@/components/header/Header'
 import Insurance from '@/components/Insurance'
+import OurMission from '@/components/OurMission'
+import Steps from '@/components/steps/Steps'
 
 import '@/styles/basicStyles.scss'
 
-
 export default {
-    components: { Ticker, Navbar, Header, Insurance }
+    components: { Header, Insurance, OurMission, Steps }
 }
 </script>
 
