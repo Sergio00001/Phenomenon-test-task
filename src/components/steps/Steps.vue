@@ -31,7 +31,7 @@ export default {
     position: sticky;
     top: 0;
     background: linear-gradient(18deg, rgb(221, 137, 119) 24%, rgb(107, 159, 215) 50%, rgb(192, 143, 97) 89%);
-    border: 1px solid black;
+    border: 1px solid #2D2A26;
     border-bottom: none;
 }
 

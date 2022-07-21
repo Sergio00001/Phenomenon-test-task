@@ -49,6 +49,7 @@ export default {
     position: fixed;
     width: 100%;
     z-index: 99;
+    border-bottom: 1px solid #2D2A26;
 }
 
 .navbar {
