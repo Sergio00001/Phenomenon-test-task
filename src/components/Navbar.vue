@@ -43,9 +43,9 @@ export default {
 .navbar {
     background: #FCFCF0;
     display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+    // position: fixed;
+    // width: 100%;
+    // z-index: 99;
 }
 
 .container {
@@ -80,7 +80,7 @@ export default {
 }
 
 .left__btn {
-    padding: 16px 27px;
+    padding: 1vh 27px;
     background: #FCFCF0;
     margin-right: 12px;
     margin-top: 10px;
@@ -92,7 +92,7 @@ export default {
 }
 
 .right__btn {
-    padding: 16px;
+    padding: 1.3vh;
     background: #FCFCF0;
     margin-top: 10px;
     margin-bottom: 19px;

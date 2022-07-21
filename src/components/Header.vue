@@ -35,7 +35,8 @@ export default {
 }
 
 .photo__wrapper {
-    padding-top: 85px;
+    position: relative;
+    top: 5px;
 }
 
 .photo {
@@ -60,6 +61,7 @@ export default {
     padding: 15px 36px;
     font-size: 16px;
     line-height: 22px;
+    background-color: #8ABADD;
 }
 
 .italic_blue {
@@ -71,22 +73,4 @@ export default {
     color: #F87C56;
     font-family: 'Playfair Display Bold Italic', sans-serif;
 }
-
-// @media(max-width:1270px) {
-//     .title {
-//         font-size: 60px;
-//     }
-// }
-
-// @media(max-width:1024px) {
-//     .title {
-//         font-size: 50px;
-//     }
-// }
-
-// @media(max-width:950px) {
-//     .title {
-//         font-size: 41px;
-//     }
-// }
 </style>
