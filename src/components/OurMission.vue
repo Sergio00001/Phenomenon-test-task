@@ -114,4 +114,29 @@ export default {
         left: 1%;
     }
 }
+
+@media(min-width: 1700px) {
+    .title {
+        max-width: 650px;
+    }
+
+    .text {
+        max-width: 630px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 20px 40px;
+    }
+
+    .our_mission__img {
+        left: 13%;
+    }
+}
+
+@media(min-width: 2000px) {
+    .picture {
+        width: 110%;
+    }
+}
 </style>

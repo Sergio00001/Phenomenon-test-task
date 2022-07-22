@@ -85,7 +85,7 @@ export default {
     letter-spacing: -0.02em;
     color: #2D2A26;
     font-weight: 500;
-    font-size: 22px;
+    font-size: calc(19px + (10 + 10 * 0.7) * (100vw - 768px) / 2560);
     line-height: 180%;
 }
 

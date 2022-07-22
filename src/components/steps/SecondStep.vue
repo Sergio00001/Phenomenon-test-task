@@ -60,4 +60,28 @@ export default {
         left: 0;
     }
 }
+
+@media(min-width:1700px) {
+    .step__content {
+        padding-top: 5%;
+    }
+
+    .step__img {
+        width: 20%;
+    }
+
+    .step__text {
+        max-width: 500px;
+    }
+}
+
+@media(min-width:1850px) {
+    .step__content {
+        padding-top: 0%;
+    }
+
+    .step__img {
+        width: 16%;
+    }
+}
 </style>

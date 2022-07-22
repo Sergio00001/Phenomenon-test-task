@@ -3,24 +3,32 @@
         <Ticker />
         <div class="navbar">
             <div class="container">
-                <div class="nav__links">
-                    <a
-                        href="#"
-                        class="nav__link"
-                    >About</a>
-                    <a
-                        href="#"
-                        class="nav__link"
-                    >How it works</a>
-                    <a
-                        href="#"
-                        class="nav__link"
-                    >Blog</a>
-                    <a
-                        href="#"
-                        class="nav__link"
-                    >Contacts</a>
-                </div>
+                <ul class="nav__links">
+                    <li class="nav__link">
+                        <a
+                            href="#"
+                            class="link"
+                        >About</a>
+                    </li>
+                    <li class="nav__link">
+                        <a
+                            href="#"
+                            class="link"
+                        >How it works</a>
+                    </li>
+                    <li class="nav__link">
+                        <a
+                            href="#"
+                            class="link"
+                        >Blog</a>
+                    </li>
+                    <li class="nav__link">
+                        <a
+                            href="#"
+                            class="link"
+                        >Contacts</a>
+                    </li>
+                </ul>
                 <div class="nav__btns">
                     <button class="left__btn btn">Get a Kit<img
                             src="@/assets/navbar/box.png"
@@ -63,25 +71,33 @@ export default {
     align-items: center;
 }
 
+.nav__links {
+    display: flex;
+    align-items: center;
+}
+
 .nav__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    color: #2D2A26;
-    margin-right: 10px;
     transition: all 0.3s ease;
+    margin-right: 10px;
 
     &:last-child {
         margin-right: 0px;
     }
 
     &:hover {
-        font-size: 15px;
+        transform: scale(1.1);
     }
 
     &:active {
-        font-size: 14px;
+        transform: scale(0.9);
     }
+}
+
+.link {
+    font-weight: 500;
+    font-size: calc(14px + (16 + 16 * 0.7) * (100vw - 768px) / 2560);
+    line-height: 19px;
+    color: #2D2A26;
 }
 
 .nav__btns {
@@ -94,6 +110,8 @@ export default {
     margin-right: 12px;
     margin-top: 10px;
     margin-bottom: 19px;
+    font-size: calc(14px + (9 + 9 * 0.7) * (100vw - 768px) / 2560);
+    line-height: 19px;
 }
 
 .box {

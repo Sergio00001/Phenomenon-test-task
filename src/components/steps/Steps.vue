@@ -80,12 +80,20 @@ export default {
 .step__btn {
     padding: 16px 50px;
     margin-top: 34px;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 @media(max-width:900px) {
 
     .step__picture {
         width: 90%;
+    }
+}
+
+@media(min-width: 1700px) {
+    .step__btn {
+        font-size: 22px;
     }
 }
 </style>

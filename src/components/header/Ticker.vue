@@ -22,7 +22,7 @@ export default {
 
 .title {
     font-weight: 700;
-    font-size: 12px;
+    font-size: calc(12px + (9 + 9 * 0.7) * (100vw - 768px) / 2560);
     line-height: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -38,6 +38,18 @@ export default {
 
     100% {
         transform: translateX(-100%)
+    }
+}
+
+@media(min-width:1280px) {
+    .title {
+        padding-left: 10%;
+    }
+}
+
+@media(min-width:2000px) {
+    .title {
+        padding-left: 15%;
     }
 }
 </style>

@@ -83,4 +83,12 @@ export default {
         width: 130px;
     }
 }
+
+@media(min-width:1700px) {
+    .btn {
+        font-size: 25px;
+        padding: 30px 40px;
+        width: 200px;
+    }
+}
 </style>

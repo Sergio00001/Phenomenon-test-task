@@ -50,7 +50,7 @@ export default {
 .title {
     max-width: 513px;
     font-weight: 700;
-    font-size: calc(40px + 62.6 * ((100vw - 768px) / 1440));
+    font-size: calc(40px + 116.2 * (100vw - 768px) / 2560);
     line-height: 95%;
     letter-spacing: -3px;
     color: #2D2A26;
@@ -75,5 +75,30 @@ export default {
 .italic_orange {
     color: #F87C56;
     font-family: 'Playfair Display Bold Italic', sans-serif;
+}
+
+@media(min-width: 1700px) {
+    .title {
+        max-width: 720px;
+    }
+
+    .btn {
+        padding: 20px 40px;
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 2000px) {
+    .title {
+        max-width: 950px;
+    }
+
+    .photo {
+        width: 124%;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
 }
 </style>
