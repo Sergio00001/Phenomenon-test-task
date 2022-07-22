@@ -55,7 +55,6 @@ export default {
 }
 
 .analyze__name {
-    // font-size: 48px;
     font-size: calc(30px + (18 + 18 * 0.7) * (100vw - 768px) / 1440);
     line-height: 105%;
     text-align: center;
