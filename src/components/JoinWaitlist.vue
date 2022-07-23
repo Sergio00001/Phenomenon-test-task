@@ -38,7 +38,11 @@ export default {}
 
 .waitlist__pictures {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .message {
     position: relative;
@@ -51,11 +55,12 @@ export default {}
     top: 15px;
 }
 
+
 .waitlist__title {
     color: #F68D2E;
     text-align: center;
     letter-spacing: -3px;
-    font-size: calc(45px + (17 + 17 * 0.7) * (100vw - 768px) / 1440);
+    font-size: calc(22px + (38 + 38 * 0.7) * (100vw - 320px) / 1440);
     line-height: 105%;
 }
 
@@ -66,8 +71,27 @@ export default {}
 
 .waitlist__text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc(17px + (12 + 12 * 0.7) * (100vw - 320px) / 2560);
     line-height: 160%;
     text-align: center;
+}
+
+
+@media(max-width:600px) {
+    .waitlist__title {
+        letter-spacing: -1px;
+    }
+
+    .heart {
+        width: 20%;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    .waitlist__text {
+        padding: 0px 20px;
+    }
 }
 </style>

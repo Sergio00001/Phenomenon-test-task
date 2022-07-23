@@ -1,5 +1,8 @@
 <template>
-    <div class="header__top">
+    <div
+        class="header__top"
+        v-if="!$store.state.smallScreen"
+    >
         <Ticker />
         <div class="navbar">
             <div class="container">
@@ -44,12 +47,14 @@
             </div>
         </div>
     </div>
+    <NavbarSmall v-if="$store.state.smallScreen" />
 </template>
 <script>
 import Ticker from '@/components/header/Ticker';
+import NavbarSmall from '@/components/header/navbar/NavbarSmall';
 
 export default {
-    components: { Ticker }
+    components: { Ticker, NavbarSmall }
 }
 </script>
 <style scoped lang="scss">

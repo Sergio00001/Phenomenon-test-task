@@ -17,7 +17,7 @@
     </div>
 </template>
 <script>
-import Navbar from '@/components/header/Navbar';
+import Navbar from '@/components/header/navbar/Navbar';
 export default {
     components: { Navbar }
 }
@@ -75,6 +75,54 @@ export default {
 .italic_orange {
     color: #F87C56;
     font-family: 'Playfair Display Bold Italic', sans-serif;
+}
+
+@media(max-width:767px) {
+    .header {
+        flex-direction: column;
+        padding-top: 20%;
+    }
+
+    .title {
+        max-width: 335px;
+        text-align: center;
+        font-size: 44px;
+        padding: 5px;
+    }
+
+    .header__content {
+        padding-left: 0;
+    }
+
+    .header__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+}
+
+@media(max-width:650px) {
+    .header {
+        padding-top: 22%;
+    }
+}
+
+@media(max-width:425px) {
+    .header {
+        padding-top: 27%;
+    }
+}
+
+@media(max-width:374px) {
+    .header {
+        padding-top: 31%;
+    }
+}
+
+@media(max-width:300px) {
+    .header {
+        padding-top: 35%;
+    }
 }
 
 @media(min-width: 1700px) {

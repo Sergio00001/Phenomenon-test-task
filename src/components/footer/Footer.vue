@@ -1,5 +1,8 @@
 <template>
-    <div class="footer">
+    <div
+        class="footer"
+        v-if="!$store.state.smallScreen"
+    >
         <div class="container">
             <div class="footer__top">
                 <div class="footer__top__links">
@@ -82,10 +85,12 @@
             </div>
         </div>
     </div>
+    <FooterSmall v-if="$store.state.smallScreen" />
 </template>
 <script>
+import FooterSmall from '@/components/footer/FooterSmall';
 export default {
-
+    components: { FooterSmall }
 }
 </script>
 <style scoped lang="scss">

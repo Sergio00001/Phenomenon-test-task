@@ -54,13 +54,6 @@ export default {
     background-color: #F5CABF;
 }
 
-@media(max-width:900px) {
-    .step__img {
-        width: 40%;
-        left: 0;
-    }
-}
-
 @media(min-width:1700px) {
     .step__content {
         padding-top: 5%;
@@ -82,6 +75,26 @@ export default {
 
     .step__img {
         width: 16%;
+    }
+}
+
+@media(max-width:900px) {
+    .step__img {
+        width: 40%;
+        left: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .step__discription {
+        margin-left: 0;
+        text-align: left;
+        max-width: 320px;
+    }
+
+    .step__img {
+        left: 45%;
+        width: 55%;
     }
 }
 </style>

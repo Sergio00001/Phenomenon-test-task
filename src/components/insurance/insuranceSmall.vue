@@ -1,7 +1,7 @@
 <template>
     <div class="insurance">
         <div class="container">
-            <div class="insurance__links">
+            <div class="insurance__links top">
                 <a
                     href="#"
                     class="insurance__link"
@@ -18,6 +18,8 @@
                         alt="logo"
                         class="insurance__logo"
                     ></a>
+            </div>
+            <div class="insurance__links bottom">
                 <a
                     href="#"
                     class="insurance__link"
@@ -34,9 +36,9 @@
                         alt="logo"
                         class="insurance__logo"
                     ></a>
-                <div class="insurance__btn">
-                    <button class="btn">Check Insurance</button>
-                </div>
+            </div>
+            <div class="insurance__btn">
+                <button class="btn">Check Insurance</button>
             </div>
         </div>
     </div>
@@ -54,19 +56,27 @@ export default {
 
 
 .insurance__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.insurance__link {
     display: flex;
-    justify-content: space-around;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .insurance__logo {
-    width: 100%;
+    width: 75%;
 }
 
 .insurance__btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .btn {

@@ -42,9 +42,48 @@ export default {
 
 .step__img {
     justify-content: right;
+    width: 28%;
 }
 
 .step__btn {
     background-color: #8ABADD;
+}
+
+@media(min-width: 1700px) {
+    .step__img {
+        width: 20%;
+    }
+}
+
+@media(min-width: 2000px) {
+    .step__img {
+        width: 15%;
+    }
+}
+
+@media(max-width:600px) {
+    .step__discription {
+        max-width: 320px;
+    }
+
+    .step__img {
+        position: absolute;
+        bottom: 0;
+        right: 4%;
+        width: 45%;
+    }
+}
+
+@media(max-width:450px) {
+    .step__discription {
+        max-width: 320px;
+    }
+
+    .step__img {
+        position: absolute;
+        bottom: 0;
+        right: 4%;
+        width: 50%;
+    }
 }
 </style>

@@ -1,12 +1,21 @@
 <template>
     <div class="step__wrapper">
-        <div class="step">
+        <div
+            class="step"
+            :class="{ 'small': $store.state.smallScreen }"
+        >
             <FirstStep />
         </div>
-        <div class="step">
+        <div
+            class="step"
+            :class="{ 'small': $store.state.smallScreen }"
+        >
             <SecondStep />
         </div>
-        <div class="step">
+        <div
+            class="step"
+            :class="{ 'small': $store.state.smallScreen }"
+        >
             <ThirdStep />
         </div>
     </div>
@@ -23,7 +32,7 @@ export default {
 </script>
 <style lang="scss">
 .step__wrapper {
-    height: 453px;
+    height: 500px;
     overflow: scroll;
 }
 
@@ -33,6 +42,11 @@ export default {
     background: linear-gradient(18deg, rgb(221, 137, 119) 24%, rgb(107, 159, 215) 50%, rgb(192, 143, 97) 89%);
     border: 1px solid #2D2A26;
     border-bottom: none;
+    height: 100%;
+
+    &.small {
+        background-image: linear-gradient(197deg, #8abadd 42%, #ffc39f 100%);
+    }
 }
 
 .step__position {
@@ -41,7 +55,6 @@ export default {
 }
 
 .step__content {
-    padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,16 +97,48 @@ export default {
     line-height: 19px;
 }
 
-@media(max-width:900px) {
+@media(min-width: 1700px) {
+    .step__btn {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:1000px) {
 
     .step__picture {
         width: 90%;
     }
+
+
+    .step__content {
+        padding-top: 2%;
+    }
+
+    .step__wrapper {
+        height: 450px;
+    }
 }
 
-@media(min-width: 1700px) {
-    .step__btn {
-        font-size: 22px;
+@media(max-width:800px) {
+    .step__wrapper {
+        height: 400px;
+    }
+}
+
+@media(max-width:600px) {
+    .step__wrapper {
+        height: 500px;
+    }
+
+    .step__content {
+        flex-direction: column;
+        justify-content: left;
+        align-items: baseline;
+    }
+
+
+    .step {
+        height: 100%;
     }
 }
 </style>

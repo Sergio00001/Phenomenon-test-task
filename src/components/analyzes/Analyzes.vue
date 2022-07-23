@@ -169,4 +169,19 @@ export default {
     width: 10%;
 
 }
+
+@media(max-width:600px) {
+    .analyze {
+        width: 100%;
+
+        &.second,
+        &.four {
+            border-left: 1px solid #2D2A26;
+        }
+
+        &.three {
+            border-bottom: none;
+        }
+    }
+}
 </style>

@@ -103,18 +103,6 @@ export default {
 }
 
 
-@media(max-width:1220px) {
-    .picture {
-        width: 75%;
-    }
-}
-
-@media(max-width:900px) {
-    .our_mission__img {
-        left: 1%;
-    }
-}
-
 @media(min-width: 1700px) {
     .title {
         max-width: 650px;
@@ -137,6 +125,48 @@ export default {
 @media(min-width: 2000px) {
     .picture {
         width: 110%;
+    }
+}
+
+@media(max-width:1220px) {
+    .picture {
+        width: 75%;
+    }
+}
+
+@media(max-width:900px) {
+    .our_mission__img {
+        left: 1%;
+    }
+}
+
+@media(max-width:740px) {
+    .our_mission {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .our_mission__img {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our_mission__content {
+        position: static;
+        margin-left: 0%;
+        padding-bottom: 20px;
+        max-width: 350px;
+    }
+
+    .picture {
+        width: 50%;
+    }
+
+    .title {
+        font-size: calc(37px + -0.3 * (100vw - 768px) / 1440);
+        letter-spacing: -1px;
     }
 }
 </style>

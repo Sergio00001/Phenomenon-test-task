@@ -86,4 +86,10 @@ export default {
 .box {
     width: 50%;
 }
+
+@media(max-width:600px) {
+    .analyze__name {
+        letter-spacing: -1px;
+    }
+}
 </style>

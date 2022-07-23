@@ -112,6 +112,7 @@ export default {
     width: 50%;
     padding-top: 70px;
     background-image: linear-gradient(168deg, #ea0c2a 3%, #8c03ff 42%, #0000ff 67%, #00cfff 89%);
+    position: relative;
 }
 
 .logo__wrapper {
@@ -135,15 +136,49 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .phone {
-    width: 80%;
+    width: 100%;
 }
 
 @media(max-width:900px) {
     .tiktok__logo {
         width: 20%;
+    }
+}
+
+
+@media(max-width:600px) {
+    .social {
+        flex-wrap: wrap;
+    }
+
+    .spotify {
+        width: 100%;
+    }
+
+    .tiktok {
+        width: 100%;
+    }
+
+    .phone__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .phone {
+        width: 80%;
+    }
+
+    .tiktok__title {
+        letter-spacing: -1px;
     }
 }
 </style>
