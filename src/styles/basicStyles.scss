@@ -42,7 +42,6 @@ ul li {
 }
 
 .container {
-    // width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
@@ -55,6 +54,7 @@ ul li {
     box-shadow: 4px 4px 0px 1px #2D2A26;
     transition: all 0.3s ease;
     border: 1px solid #2D2A26;
+    color: #2D2A26;
 
 
     &:hover {

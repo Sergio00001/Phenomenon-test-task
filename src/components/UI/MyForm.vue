@@ -45,14 +45,15 @@ export default {
     padding-left: 10px;
 
     &:focus {
-        outline: 1px solid #8ABADD;
-        border: 1px solid #8ABADD;
-        border-right: 1px solid #8ABADD;
+        outline: none;
+        border: 2px solid #8ABADD;
     }
 
 }
 
 .send__btn {
+    position: relative;
+    right: 3px;
     padding: 0px 30px;
     height: 60px;
     background-color: #F5CABF;
@@ -72,8 +73,9 @@ export default {
 
     &.focus {
         background-color: #F68D2E;
-        border-left: 1px solid #8ABADD;
+        border-left: 2px solid #8ABADD;
     }
+
 }
 
 @media(max-width:1050px) {
